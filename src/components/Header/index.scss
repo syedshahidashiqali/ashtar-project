@@ -1,0 +1,44 @@
+.headerWrapper {
+  nav {
+    background-color: #fff;
+    padding: 53px 70px 85px;
+    .offCanvasBodyWrapper {
+      .nav-item.dropdown {
+        padding-right: 0.5rem;
+
+        .dropdown-menu {
+          top: 55px;
+          width: 616px;
+          height: 313px;
+          background-color: #fffdfd;
+          box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+          border-radius: 16px;
+          padding: 25px 25px;
+        }
+
+        .nav-link {
+          color: #858b8f;
+          &:hover {
+            color: #fdd800;
+          }
+        }
+      }
+
+      button {
+        background-color: #fdd800;
+        padding: 14px, 20px, 14px, 20px;
+        border-radius: 16px;
+        color: #0d0d0e;
+        border: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1078px) {
+  .headerWrapper {
+    nav {
+      padding: 53px 26px 85px;
+    }
+  }
+}
