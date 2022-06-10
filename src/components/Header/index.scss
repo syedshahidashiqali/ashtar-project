@@ -3,13 +3,33 @@
     background-color: #fff;
     padding: 53px 70px 85px;
     .offCanvasBodyWrapper {
+      .nav-item.dropdown:nth-child(1) {
+        .dropdown-menu {
+          // height: 313px;
+        }
+      }
+      .nav-item.dropdown:nth-child(2) {
+        .dropdown-menu {
+          left: -130px;
+        }
+      }
+      .nav-item.dropdown:nth-child(3) {
+        .dropdown-menu {
+          left: -252px;
+        }
+      }
+      .nav-item.dropdown:nth-child(4) {
+        .dropdown-menu {
+          left: -345px;
+        }
+      }
       .nav-item.dropdown {
         padding-right: 0.5rem;
 
         .dropdown-menu {
           top: 55px;
           width: 616px;
-          height: 313px;
+          // height: 313px;
           background-color: #fffdfd;
           box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
           border-radius: 16px;
