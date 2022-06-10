@@ -70,31 +70,51 @@ function Header() {
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
                         <NavDropdown.Item href="#action3">
-                          <img src={BCImg} alt="blockchain icon" />
+                          <div className="iconWrapper">
+                            <img src={BCImg} alt="blockchain icon" />
+                          </div>
                           <span>Blockchain</span>
                         </NavDropdown.Item>
                         <NavDropdown.Item href="#action3">
-                          <img src={VRImg} alt="virtual reality icon" />
+                          <div className="iconWrapper">
+                            <img src={VRImg} alt="virtual reality icon" />
+                          </div>
                           <span>Virtual / Augmented Reality</span>
                         </NavDropdown.Item>
                         <NavDropdown.Item href="#action3">
-                          <img src={cloudImg} alt="cloud icon" />
+                          <div className="iconWrapper">
+                            <img src={cloudImg} alt="cloud icon" />
+                          </div>
                           <span>Cloud Transformation</span>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action3">
+                          <div className="iconWrapper">
+                            <img src={AIImg} alt="AI icon" />
+                          </div>
+                          <span>Machine Learning and AI</span>
                         </NavDropdown.Item>
                       </div>
                       <div className="dropDownItemsRight">
                         <NavDropdown.Item href="#action3">
-                          Action
+                          <div className="iconWrapper">
+                            <img src={QCImg} alt="quantum computing icon" />
+                          </div>
+                          <span>Qunatum Computing</span>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action3">
+                          <div className="iconWrapper">
+                            <img src={IOTImg} alt="Internet of Things icon" />
+                          </div>
+                          <span>Internet of Things</span>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action3">
+                          <div className="iconWrapper">
+                            <img src={PTImg} alt="penetration testing icon" />
+                          </div>
+                          <span>Penetration Testing</span>
                         </NavDropdown.Item>
                       </div>
                     </div>
-                    {/* <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item> */}
                   </NavDropdown>
                   <NavDropdown
                     title="Engineering"
