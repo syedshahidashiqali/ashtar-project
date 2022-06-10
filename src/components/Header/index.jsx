@@ -28,6 +28,11 @@ import prodDesignImg from "../../images/product-design.svg";
 import consultingImg from "../../images/consulting.svg";
 import fullCycleDevImg from "../../images/full-cycle-dev.svg";
 import maintenanceImg from "../../images/maintenance-and-support.svg";
+// Resources link
+import articlesImg from "../../images/articles.svg";
+import contactImg from "../../images/contact-support.svg";
+import faqImg from "../../images/faq.svg";
+
 import { useState } from "react";
 import NavDropDownItem from "./NavDropDownItem";
 
@@ -245,14 +250,27 @@ function Header() {
                       })
                     }
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <div className="dropDownWrapper d-flex justify-content-between">
+                      <div className="dropDownItemsLeft">
+                        <NavDropDownItem
+                          imgSrc={articlesImg}
+                          text="Articles"
+                          altText="Articles icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={contactImg}
+                          text="Contact Support"
+                          altText="Contact Support icon"
+                        />
+                      </div>
+                      <div className="dropDownItemsRight">
+                        <NavDropDownItem
+                          imgSrc={faqImg}
+                          text="FAQ"
+                          altText="FAQ icon"
+                        />
+                      </div>
+                    </div>
                   </NavDropdown>
                   <Nav.Link href="#action1">IP Protection</Nav.Link>
                 </Nav>
