@@ -8,6 +8,8 @@ import {
 } from "react-bootstrap";
 import "./index.scss";
 import logo from "../../images/logo.svg";
+
+// Tech link
 import BCImg from "../../images/BC.svg";
 import VRImg from "../../images/VR.svg";
 import cloudImg from "../../images/cloud.svg";
@@ -15,7 +17,15 @@ import AIImg from "../../images/AI.svg";
 import QCImg from "../../images/QC.svg";
 import IOTImg from "../../images/IOT.svg";
 import PTImg from "../../images/PenetrationTesting.svg";
+// Engineering link
+import fullStackImg from "../../images/full-stack.svg";
+import mobileAppImg from "../../images/mobile-app.svg";
+import uiUxImg from "../../images/ui-ux.svg";
+import systemEngImg from "../../images/system-engr.svg";
+import devopsImg from "../../images/devops.svg";
+
 import { useState } from "react";
+import NavDropDownItem from "./NavDropDownItem";
 
 function Header() {
   const [show, setShow] = useState({
@@ -58,61 +68,54 @@ function Header() {
                         show4: show.show4,
                       })
                     }
-                    // onMouseLeave={() =>
-                    //   setShow({
-                    //     show1: false,
-                    //     show2: show.show2,
-                    //     show3: show.show3,
-                    //     show4: show.show4,
-                    //   })
-                    // }
+                    onMouseLeave={() =>
+                      setShow({
+                        show1: false,
+                        show2: show.show2,
+                        show3: show.show3,
+                        show4: show.show4,
+                      })
+                    }
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={BCImg} alt="blockchain icon" />
-                          </div>
-                          <span>Blockchain</span>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={VRImg} alt="virtual reality icon" />
-                          </div>
-                          <span>Virtual / Augmented Reality</span>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={cloudImg} alt="cloud icon" />
-                          </div>
-                          <span>Cloud Transformation</span>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={AIImg} alt="AI icon" />
-                          </div>
-                          <span>Machine Learning and AI</span>
-                        </NavDropdown.Item>
+                        <NavDropDownItem
+                          imgSrc={BCImg}
+                          text="Blockchain"
+                          altText="blockchain icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={VRImg}
+                          text="Virtual / Augmented Reality"
+                          altText="virtual reality icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={cloudImg}
+                          text="Cloud Transformation"
+                          altText="cloud icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={AIImg}
+                          text="Machine Learning and AI"
+                          altText="AI icon"
+                        />
                       </div>
                       <div className="dropDownItemsRight">
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={QCImg} alt="quantum computing icon" />
-                          </div>
-                          <span>Qunatum Computing</span>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={IOTImg} alt="Internet of Things icon" />
-                          </div>
-                          <span>Internet of Things</span>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action3">
-                          <div className="iconWrapper">
-                            <img src={PTImg} alt="penetration testing icon" />
-                          </div>
-                          <span>Penetration Testing</span>
-                        </NavDropdown.Item>
+                        <NavDropDownItem
+                          imgSrc={QCImg}
+                          text="Qunatum Computing"
+                          altText="quantum computing icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={IOTImg}
+                          text="Internet of Things"
+                          altText="Internet of Things icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={PTImg}
+                          text="Penetration Testing"
+                          altText="penetration testing icon"
+                        />
                       </div>
                     </div>
                   </NavDropdown>
@@ -128,23 +131,46 @@ function Header() {
                         show4: show.show4,
                       })
                     }
-                    onMouseLeave={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: false,
-                        show3: show.show3,
-                        show4: show.show4,
-                      })
-                    }
+                    // onMouseLeave={() =>
+                    //   setShow({
+                    //     show1: show.show1,
+                    //     show2: false,
+                    //     show3: show.show3,
+                    //     show4: show.show4,
+                    //   })
+                    // }
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <div className="dropDownWrapper d-flex justify-content-between">
+                      <div className="dropDownItemsLeft">
+                        <NavDropDownItem
+                          imgSrc={fullStackImg}
+                          text="Full Stack Web Development"
+                          altText="full-stack web development icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={mobileAppImg}
+                          text="Mobile Development"
+                          altText="mobile development icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={uiUxImg}
+                          text="UI/UX Design"
+                          altText="ui / ux icon"
+                        />
+                      </div>
+                      <div className="dropDownItemsRight">
+                        <NavDropDownItem
+                          imgSrc={systemEngImg}
+                          text="System Engineering"
+                          altText="system engineering icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={devopsImg}
+                          text="DevOps Engineering"
+                          altText="DevOps Engineering icon"
+                        />
+                      </div>
+                    </div>
                   </NavDropdown>
                   <NavDropdown
                     title="Services"
