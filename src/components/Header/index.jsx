@@ -23,7 +23,11 @@ import mobileAppImg from "../../images/mobile-app.svg";
 import uiUxImg from "../../images/ui-ux.svg";
 import systemEngImg from "../../images/system-engr.svg";
 import devopsImg from "../../images/devops.svg";
-
+// Services link
+import prodDesignImg from "../../images/product-design.svg";
+import consultingImg from "../../images/consulting.svg";
+import fullCycleDevImg from "../../images/full-cycle-dev.svg";
+import maintenanceImg from "../../images/maintenance-and-support.svg";
 import { useState } from "react";
 import NavDropDownItem from "./NavDropDownItem";
 
@@ -131,14 +135,14 @@ function Header() {
                         show4: show.show4,
                       })
                     }
-                    // onMouseLeave={() =>
-                    //   setShow({
-                    //     show1: show.show1,
-                    //     show2: false,
-                    //     show3: show.show3,
-                    //     show4: show.show4,
-                    //   })
-                    // }
+                    onMouseLeave={() =>
+                      setShow({
+                        show1: show.show1,
+                        show2: false,
+                        show3: show.show3,
+                        show4: show.show4,
+                      })
+                    }
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
@@ -193,14 +197,32 @@ function Header() {
                       })
                     }
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <div className="dropDownWrapper d-flex justify-content-between">
+                      <div className="dropDownItemsLeft">
+                        <NavDropDownItem
+                          imgSrc={prodDesignImg}
+                          text="Product Design"
+                          altText="Product Design icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={consultingImg}
+                          text="Consulting"
+                          altText="Consulting icon"
+                        />
+                      </div>
+                      <div className="dropDownItemsRight">
+                        <NavDropDownItem
+                          imgSrc={fullCycleDevImg}
+                          text="Full-Cycle Development"
+                          altText="Full-Cycle Development icon"
+                        />
+                        <NavDropDownItem
+                          imgSrc={maintenanceImg}
+                          text="Maintenance and"
+                          altText="Support icon"
+                        />
+                      </div>
+                    </div>
                   </NavDropdown>
                   <NavDropdown
                     title="Resources"
