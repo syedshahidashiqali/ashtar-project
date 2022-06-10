@@ -1,0 +1,36 @@
+.bannerWrapper {
+  background-color: #c4c4c4;
+  padding: 70px 10px;
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 73px;
+      color: #000000;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+    }
+    button {
+      margin-top: 20px;
+      width: 202px;
+      height: 82px;
+      background-color: #fdd800;
+      padding: 25px 30px;
+      border-radius: 20px;
+      color: #0d0d0e;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 32px;
+      border: none;
+    }
+  }
+}
