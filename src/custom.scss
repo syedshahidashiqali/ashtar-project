@@ -1,10 +1,9 @@
-.app {
-  .Mybefore::before {
-    content: "";
-    position: absolute;
-    display: block !important;
-    width: 10px !important;
-    height: 3px !important;
-    background-color: #fdd800 !important;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fd-c {
+  flex-direction: column;
 }
