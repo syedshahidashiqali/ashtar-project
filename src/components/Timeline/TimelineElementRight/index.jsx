@@ -19,7 +19,7 @@ const TimelineElementRight = ({ h3Text, pText, imgPath, number }) => {
       <div className="timeLineItemWrapper">
         <div className="left">
           <div className="iconWrapper">
-            <img src={imgPath} alt="" />
+            {imgPath != undefined && <img src={imgPath} alt="" />}
           </div>
         </div>
         <div className="right">
