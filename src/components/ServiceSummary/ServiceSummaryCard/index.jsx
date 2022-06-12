@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 const ServiceSummaryCard = ({ title, para, icon }) => {
   return (
-    <Col xs={12} sm={12} md={6} lg={3}>
+    <Col xs={12} sm={12} md={6} lg={3} className={styles.marginBottom}>
       <div className={styles.serviceSummaryCardWrapper}>
         <div className={styles.imgWrapper}>
           <img src={icon} alt="icon" />
