@@ -4,6 +4,7 @@ import Timeline from "./components/Timeline";
 import ServiceSummary from "./components/ServiceSummary";
 import ComprehensiveApproach from "./components/ComprehensiveApproach";
 import DevStackQaDepartment from "./components/DevStackQaDepartment";
+import QaStandards from "./components/QaStandards";
 import "./custom.scss";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ServiceSummary />
       <ComprehensiveApproach />
       <DevStackQaDepartment />
+      <QaStandards />
     </div>
   );
 }
