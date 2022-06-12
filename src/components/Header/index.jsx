@@ -59,7 +59,7 @@ function Header() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"lg"}`}>
-                Offcanvas
+                <img src={logo} alt="devstack logo" />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <div className={"offCanvasBodyWrapper"}>

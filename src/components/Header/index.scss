@@ -90,3 +90,30 @@
     }
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .offCanvasBodyWrapper {
+    .dropDownWrapper {
+      flex-direction: column;
+    }
+    button {
+      display: none;
+    }
+
+    .nav-item.dropdown {
+      .nav-link {
+        color: #858b8f !important;
+        &:hover {
+          color: #fdd800;
+        }
+      }
+    }
+  }
+
+  .offCanvasBodyWrapper > .offcanvas-body > .navbar-nav > a.nav-link {
+    color: #858b8f !important;
+    &:hover {
+      color: #fdd800;
+    }
+  }
+}
