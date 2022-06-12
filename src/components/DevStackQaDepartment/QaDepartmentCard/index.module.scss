@@ -14,3 +14,22 @@
     height: 75px;
   }
 }
+
+.qaDepartmentCardCol {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 505px) {
+  .cardWrapper {
+    h6 {
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

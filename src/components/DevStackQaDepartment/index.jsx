@@ -40,8 +40,6 @@ const DevStackQaDepartment = () => {
             text="Defect monitoring, tracking, and fixation"
             icon={detectImg}
           />
-        </Row>
-        <Row className="mt-5">
           <QaStackDepartmentCard
             text="Configuration update and management"
             icon={configureImg}
