@@ -26,9 +26,6 @@
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-          p {
-            width: 75%;
-          }
         }
       }
     }
@@ -292,6 +289,12 @@
         }
       }
     }
+
+    .vertical-timeline-element {
+      .vertical-timeline-element-icon {
+        z-index: 777;
+      }
+    }
     .timeLineItemWrapper {
       display: flex;
       justify-content: space-between;
@@ -300,11 +303,9 @@
         font-weight: 400;
         font-size: 31.25px;
         line-height: 38px;
-        // width: 95%;
       }
 
       p {
-        // width: 95%;
         font-weight: 400;
         font-size: 17.5px;
         line-height: 21px;
@@ -312,8 +313,6 @@
 
       .iconWrapper {
         background-color: #fdd800;
-        // width: 68px;
-        // height: 68px;
         width: 88px;
         height: 88px;
         border-radius: 13px;
@@ -325,6 +324,524 @@
         img {
           width: calc(68px - 10px);
           height: calc(68px - 10px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1169px) {
+  .timeLineWrapper {
+    .verticalTimelineMain {
+      .vertical-timeline-element:nth-child(1) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(2) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+            // display: block;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(3) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(4) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(5) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(6) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(7) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(8) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(9) {
+        .vertical-timeline-element-content {
+          top: -8px;
+        }
+        .vertical-timeline-element-content-arrow::after {
+          top: 10px;
+          left: 5px;
+          width: 65px;
+        }
+
+        .timeLineItemWrapper {
+          position: relative;
+          top: -8px;
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .timeLineWrapper {
+    .verticalTimelineMain {
+      .vertical-timeline-element {
+        .timeLineItemWrapper {
+          .right {
+            h3 {
+              font-size: 26px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .timeLineWrapper {
+    .verticalTimelineMain {
+      .vertical-timeline-element {
+        .timeLineItemWrapper {
+          .right {
+            h3 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .timeLineWrapper {
+    .verticalTimelineMain {
+      .vertical-timeline-element {
+        &:nth-child(2) {
+          .timeLineItemWrapper {
+            .right {
+              text-align: center;
+              h3 {
+                width: 100%;
+              }
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          .timeLineItemWrapper {
+            .right {
+              text-align: center;
+              h3 {
+                width: 100%;
+              }
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          .timeLineItemWrapper {
+            .right {
+              text-align: center;
+              h3 {
+                width: 100%;
+              }
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &:nth-child(8) {
+          .timeLineItemWrapper {
+            .right {
+              text-align: center;
+              h3 {
+                width: 100%;
+              }
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .timeLineItemWrapper {
+          .right {
+            text-align: center;
+            h3 {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .timeLineWrapper {
+    .verticalTimelineMain {
+      .vertical-timeline-element:nth-child(1) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(2) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(3) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(4) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(5) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(6) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(7) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(8) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .vertical-timeline-element:nth-child(9) {
+        .vertical-timeline-element-content {
+          .vertical-timeline-element-content-arrow::after {
+            width: 145px;
+          }
+          .timeLineItemWrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .left {
+              width: 90%;
+            }
+
+            .right {
+              width: 90%;
+            }
+          }
         }
       }
     }
