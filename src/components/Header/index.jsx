@@ -46,7 +46,7 @@ function Header() {
 
   return (
     <div className={"headerWrapper"}>
-      <Navbar bg="light" expand={"lg"} className="mb-3">
+      <Navbar bg="light" expand={"lg"}>
         <Container fluid>
           <Navbar.Brand href="#">
             <img src={logo} alt="devstack logo" />
