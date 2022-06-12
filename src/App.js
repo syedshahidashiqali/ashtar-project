@@ -5,6 +5,7 @@ import ServiceSummary from "./components/ServiceSummary";
 import ComprehensiveApproach from "./components/ComprehensiveApproach";
 import DevStackQaDepartment from "./components/DevStackQaDepartment";
 import QaStandards from "./components/QaStandards";
+import RecommendDevStack from "./components/RecommendDevStack";
 import "./custom.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <ComprehensiveApproach />
       <DevStackQaDepartment />
       <QaStandards />
+      <RecommendDevStack />
     </div>
   );
 }
