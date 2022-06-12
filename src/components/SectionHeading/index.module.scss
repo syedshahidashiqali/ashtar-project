@@ -4,3 +4,18 @@
   font-size: 48.83px;
   line-height: 59px;
 }
+
+@media only screen and (max-width: 550px) {
+  .headingText {
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .headingText {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
