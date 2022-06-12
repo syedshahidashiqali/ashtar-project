@@ -13,7 +13,7 @@ const ComprehensiveApproach = () => {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} sm={12} md={8} lg={8}>
+          <Col xs={12} sm={12} md={9} lg={8}>
             <div className="comprehensiveTabWrapper">
               <Tabs defaultActiveKey="control" className="my-5">
                 <Tab eventKey="planning" title="Planning" disabled>
@@ -35,7 +35,7 @@ const ComprehensiveApproach = () => {
               </Tabs>
             </div>
           </Col>
-          <Col xs={12} sm={12} md={4} lg={4}>
+          <Col xs={12} sm={12} md={3} lg={4}>
             <div className="comprehensiveImgWrapper">
               <img className="img-fluid" src={comprehensiveImg} alt="comprehensive approach" />
             </div>
