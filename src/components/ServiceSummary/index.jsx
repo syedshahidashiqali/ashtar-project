@@ -12,8 +12,6 @@ const ServiceSummary = () => {
       <Container>
         <Row>
           <ServiceSummaryCard
-            // iconWidth="75px"
-            // iconHeight="98px"
             icon={qualityImg}
             title="Quality"
             para="We work on certain ethics and our development process 
@@ -21,8 +19,6 @@ const ServiceSummary = () => {
             stuff and highly functional websites and applications"
           />
           <ServiceSummaryCard
-            // iconWidth="91px"
-            // iconHeight="68px"
             icon={speedImg}
             title="Speed"
             para="We understand how important time is for our clients, 
@@ -31,8 +27,6 @@ const ServiceSummary = () => {
             before time."
           />
           <ServiceSummaryCard
-            // iconWidth="101px"
-            // iconHeight="102px"
             icon={flexibilityImg}
             title="Flexibility"
             para="Customise us, mould us, personalise us – in short exploit 
@@ -41,8 +35,6 @@ const ServiceSummary = () => {
             needs."
           />
           <ServiceSummaryCard
-            // iconWidth="88px"
-            // iconHeight="88px"
             icon={engagementImg}
             title="Engagement"
             para="We work on certain ethics and our development process is a 
