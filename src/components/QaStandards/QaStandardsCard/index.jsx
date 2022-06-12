@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 const QaStandardsCard = ({ number, title, para }) => {
   return (
-    <Col xs={12} sm={12} md={6} lg={3}>
+    <Col xs={12} sm={12} md={6} lg={3} className={styles.qaStandardCol}>
       <div className={styles.cardWrapper}>
         <div className={styles.tag}>
           <span>{number}</span>
