@@ -1,0 +1,32 @@
+.comprehensiveApproachWrapper {
+  .comprehensiveTabWrapper {
+    .nav-tabs {
+      border: none;
+
+      .nav-item {
+        button.nav-link {
+          font-size: 34.18px;
+          line-height: 42px;
+        }
+        button.nav-link.active {
+          border: none;
+          border-bottom: 5px solid #fdd800;
+        }
+      }
+    }
+
+    .tabItemWrapper {
+      padding-left: 10px;
+      h3 {
+        font-weight: 400;
+        font-size: 39.6px;
+        line-height: 48px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+  }
+}
