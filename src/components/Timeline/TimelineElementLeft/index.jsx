@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const TimelineElementLeft = ({ h3Text, pText, imgPath, number }) => {
-  const [width, setWidth] = useState("");
+  const [width, setWidth] = useState(document.body.clientWidth);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -26,43 +26,33 @@ const TimelineElementLeft = ({ h3Text, pText, imgPath, number }) => {
       icon={number}
     >
       <div className="timeLineItemWrapper">
-        {
-          width <= 1169 ? (
-            <>
-              <div className="left">
-                <div className="iconWrapper">
-                  {imgPath != undefined && <img src={imgPath} alt="" />}
-                </div>
+        {width <= 1169 ? (
+          <>
+            <div className="left">
+              <div className="iconWrapper">
+                {imgPath != undefined && <img src={imgPath} alt="" />}
               </div>
-              <div className="right">
-                <h3 className="vertical-timeline-element-title">
-                  {h3Text}
-                </h3>
-                <p>
-                  {pText}
-                </p>
+            </div>
+            <div className="right">
+              <h3 className="vertical-timeline-element-title">{h3Text}</h3>
+              <p>{pText}</p>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="left d-flex fd-c justify-content-end">
+              <h3 className="vertical-timeline-element-title">{h3Text}</h3>
+              <p>{pText}</p>
+            </div>
+            <div className="right">
+              <div className="iconWrapper">
+                {imgPath != undefined && <img src={imgPath} alt="" />}
               </div>
-            </>
-          ) : (
-            <>
-              <div className="left d-flex fd-c justify-content-end">
-                <h3 className="vertical-timeline-element-title">
-                  {h3Text}
-                </h3>
-                <p>
-                  {pText}
-                </p>
-              </div>
-              <div className="right">
-                <div className="iconWrapper">
-                  {imgPath != undefined && <img src={imgPath} alt="" />}
-                </div>
-              </div>
-            </>
-          )
-        }
-      </div >
-    </VerticalTimelineElement >
+            </div>
+          </>
+        )}
+      </div>
+    </VerticalTimelineElement>
   );
 };
 
