@@ -14,7 +14,7 @@ const RecommendDevStack = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <div className="comprehensiveTabWrapper">
+            <div className="recommendTabWrapper">
               <Tabs defaultActiveKey="pricing" className="my-5">
                 <Tab eventKey="pricing" title="Project Based Pricing">
                   <div className="tabItemWrapper">
@@ -28,17 +28,23 @@ const RecommendDevStack = () => {
                         <div className="textWrapper">
                           <h3>Project Based Pricing or Fixed Bid</h3>
                           <p>
-                            Where there is great clarity in the development requirement
-                            this is something for you, here you can choose between different
-                            models, with pre-decided number of hours a developer is going to
-                            dedicate on your project, time-limit and cost of the development.
+                            Where there is great clarity in the development
+                            requirement this is something for you, here you can
+                            choose between different models, with pre-decided
+                            number of hours a developer is going to dedicate on
+                            your project, time-limit and cost of the
+                            development.
                           </p>
                         </div>
                       </Col>
                     </Row>
                   </div>
                 </Tab>
-                <Tab eventKey="dedicated" title="Dedicated Development" disabled>
+                <Tab
+                  eventKey="dedicated"
+                  title="Dedicated Development"
+                  disabled
+                >
                   Dedicated Development
                 </Tab>
                 <Tab eventKey="milestone" title="Milestone-based" disabled>
