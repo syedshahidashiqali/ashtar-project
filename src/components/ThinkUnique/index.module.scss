@@ -1,0 +1,24 @@
+.thinkUniqueWrapper {
+  margin-bottom: 10%;
+  .cardMainWrapper {
+    // height: 100%;
+    background: #ffffff;
+    box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .thinkUniqueWrapper {
+    .cardMainWrapper {
+      flex-wrap: wrap;
+
+      div {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

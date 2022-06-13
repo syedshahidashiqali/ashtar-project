@@ -1,0 +1,43 @@
+.cardWrapper {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cardBoxCircle {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #fdd800;
+    border: 10px solid #ededed;
+    span {
+      font-weight: 700;
+      font-size: 48.83px;
+      line-height: 59px;
+      text-align: center;
+    }
+  }
+  .cardTextWrapper {
+    margin-top: 15px;
+    text-align: center;
+    span {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .cardWrapper {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .cardWrapper {
+    width: 100% !important;
+  }
+}

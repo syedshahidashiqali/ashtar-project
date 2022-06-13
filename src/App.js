@@ -7,6 +7,7 @@ import DevStackQaDepartment from "./components/DevStackQaDepartment";
 import QaStandards from "./components/QaStandards";
 import RecommendDevStack from "./components/RecommendDevStack";
 import RecommendStaff from "./components/RecommendStaff";
+import ThinkUnique from "./components/ThinkUnique";
 import "./custom.scss";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <QaStandards />
       <RecommendDevStack />
       <RecommendStaff />
+      <ThinkUnique />
     </div>
   );
 }
