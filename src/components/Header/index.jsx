@@ -44,6 +44,9 @@ function Header() {
     show4: false,
   });
 
+  const updateState = (data) => {
+    setShow((prev) => ({ ...prev, ...data }));
+  };
   return (
     <div className={"headerWrapper"}>
       <Navbar bg="light" expand={"lg"}>
@@ -69,22 +72,8 @@ function Header() {
                     title="Technologies"
                     id={`offcanvasNavbarDropdown-expand-${"lg"}`}
                     show={show.show1}
-                    onMouseEnter={() =>
-                      setShow({
-                        show1: true,
-                        show2: show.show2,
-                        show3: show.show3,
-                        show4: show.show4,
-                      })
-                    }
-                    onMouseLeave={() =>
-                      setShow({
-                        show1: false,
-                        show2: show.show2,
-                        show3: show.show3,
-                        show4: show.show4,
-                      })
-                    }
+                    onMouseEnter={() => updateState({ show1: true })}
+                    onMouseLeave={() => updateState({ show1: false })}
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
@@ -132,22 +121,8 @@ function Header() {
                     title="Engineering"
                     id={`offcanvasNavbarDropdown-expand-${"lg"}`}
                     show={show.show2}
-                    onMouseEnter={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: true,
-                        show3: show.show3,
-                        show4: show.show4,
-                      })
-                    }
-                    onMouseLeave={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: false,
-                        show3: show.show3,
-                        show4: show.show4,
-                      })
-                    }
+                    onMouseEnter={() => updateState({ show2: true })}
+                    onMouseLeave={() => updateState({ show2: false })}
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
@@ -185,22 +160,8 @@ function Header() {
                     title="Services"
                     id={`offcanvasNavbarDropdown-expand-${"lg"}`}
                     show={show.show3}
-                    onMouseEnter={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: show.show2,
-                        show3: true,
-                        show4: show.show4,
-                      })
-                    }
-                    onMouseLeave={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: show.show2,
-                        show3: false,
-                        show4: show.show4,
-                      })
-                    }
+                    onMouseEnter={() => updateState({ show3: true })}
+                    onMouseLeave={() => updateState({ show3: false })}
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
@@ -233,22 +194,8 @@ function Header() {
                     title="Resources"
                     id={`offcanvasNavbarDropdown-expand-${"lg"}`}
                     show={show.show4}
-                    onMouseEnter={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: show.show2,
-                        show3: show.show3,
-                        show4: true,
-                      })
-                    }
-                    onMouseLeave={() =>
-                      setShow({
-                        show1: show.show1,
-                        show2: show.show2,
-                        show3: show.show3,
-                        show4: false,
-                      })
-                    }
+                    onMouseEnter={() => updateState({ show4: true })}
+                    onMouseLeave={() => updateState({ show4: false })}
                   >
                     <div className="dropDownWrapper d-flex justify-content-between">
                       <div className="dropDownItemsLeft">
