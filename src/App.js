@@ -13,7 +13,6 @@ import "./custom.scss";
 function App() {
   return (
     <div className="app">
-      abc
       <Header />
       <Banner />
       <Timeline />
