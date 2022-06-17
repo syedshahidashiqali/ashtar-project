@@ -23,12 +23,8 @@ const TimelineElementRight = ({ h3Text, pText, imgPath, number }) => {
           </div>
         </div>
         <div className="right">
-          <h3 className="vertical-timeline-element-title">
-            {h3Text}
-          </h3>
-          <p>
-            {pText}
-          </p>
+          <h3 className="vertical-timeline-element-title">{h3Text}</h3>
+          <p>{pText}</p>
         </div>
       </div>
     </VerticalTimelineElement>

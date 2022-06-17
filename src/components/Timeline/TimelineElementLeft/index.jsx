@@ -9,7 +9,6 @@ const TimelineElementLeft = ({ h3Text, pText, imgPath, number }) => {
       setWidth(document.body.clientWidth);
     });
   }, [width]);
-  console.log(width);
   return (
     <VerticalTimelineElement
       iconStyle={{
