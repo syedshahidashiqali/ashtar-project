@@ -1,3 +1,6 @@
+## View this project in the browser:
+### [https://ashtar-global-solution-entry-test.surge.sh/](https://ashtar-global-solution-entry-test.surge.sh/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
